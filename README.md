@@ -1,16 +1,35 @@
-# React + Vite
+# StudyBuddy AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app that turns your study notes into a summary, flashcards, and a quiz. Paste in your notes, pick a subject, and StudyBuddy AI builds a study set you can review anytime.
 
-Currently, two official plugins are available:
+**Live demo:** [https://jasonharwell61.github.io/studybuddy-ai/#/](https://jasonharwell61.github.io/studybuddy-ai/#/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Create** a study set from your own notes (with a 5,000-character limit)
+- **Summary, Flashcards, and Quiz** tabs for every study set
+- **Library** page with search, subject filter, and sorting
+- **Delete** study sets you no longer need
+- **Saved automatically** in your browser with localStorage
+- **Responsive design** that works on phones and desktops
+- **Error handling** with an error boundary and safe data loading
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React (built with Vite)
+- JavaScript
+- React Router (HashRouter for GitHub Pages)
+- Bootstrap
+- localStorage for saving data
+- Deployed with GitHub Pages (gh-pages)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run It Locally
+
+1. Clone the repo
+2. Install dependencies: `npm install`
+3. Start the dev server: `npm run dev`
+4. Open the address shown in your terminal
+
+## Notes on the AI Feature
+
+The AI feature is currently simulated in `src/utils/generateStudySet.js`. It is built so a real AI API can be swapped in later without changing the rest of the app.
